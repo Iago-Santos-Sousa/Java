@@ -5,7 +5,8 @@ public class EmpregadoHorista extends Empregado{
     private double valorHora;
     private double horas;
 
-    public EmpregadoHorista(double valorHora, double horas, String PrimeiroNome, String UltimoNome, String cpf) {
+    public EmpregadoHorista(double valorHora, double horas, String PrimeiroNome,
+                            String UltimoNome, String cpf) {
         super(PrimeiroNome, UltimoNome, cpf);
         setValorHora(valorHora);
         setHoras(horas);
@@ -36,7 +37,8 @@ public class EmpregadoHorista extends Empregado{
     }
 
     public String toString() {
-        return String.format("Empregado horista: %s\n%s: $%.2f, %s: %.2f", super.toString(), " valor hora",
+        return String.format("Empregado horista: %s\n%s: $%.2f, %s: %.2f",
+                super.toString(), " valor hora",
                 getValorHora(), "horas trabalhadas", getHoras());
     }
 }

@@ -3,9 +3,10 @@ package Polimorfismo;
 public class EmpregadoAssalariado extends Empregado {
     private double salarioSemanal;
 
-    public EmpregadoAssalariado(double s, String PrimeiroNome, String UltimoNome, String cpf) {
+    public EmpregadoAssalariado(double salario, String PrimeiroNome, String UltimoNome,
+                                String cpf) {
         super(PrimeiroNome, UltimoNome, cpf);
-        setSalarioSemanal(s);
+        setSalarioSemanal(salario);
     }
 
     public void setSalarioSemanal(double salario) {
@@ -20,6 +21,7 @@ public class EmpregadoAssalariado extends Empregado {
         return getSalarioSemanal();
     }
 
+    @Override
     public String toString() {
         return String.format("Empregado assalariado: %s\n%s: $%.2f", super.toString(),
                 "Salario semanal", getSalarioSemanal());

@@ -4,8 +4,8 @@ public class EmpregadoComissionado extends Empregado {
     private double vendasBrutas;
     private double porcentagemComissao;
 
-    public EmpregadoComissionado(double vendasBrutas, double porcentagemComissao, String PrimeiroNome,
-                                 String UltimoNome, String cpf) {
+    public EmpregadoComissionado(double vendasBrutas, double porcentagemComissao,
+                                 String PrimeiroNome, String UltimoNome, String cpf) {
         super(PrimeiroNome, UltimoNome, cpf);
         setVendasBrutas(vendasBrutas);
         setTaxaComissao(porcentagemComissao);
@@ -28,8 +28,9 @@ public class EmpregadoComissionado extends Empregado {
     }
 
     public String toString() {
-        return String.format("%s: %s\n%s: $%.2f: %s: %.2f", "Empregado Comissionado", super.toString(),
-                "Vendas brutas", getVendasBrutas(), "Porcentagem comissao", getPorcentagemComissao());
+        return String.format("%s: %s\n%s: $%.2f: %s: %.2f", "Empregado Comissionado",
+                super.toString(), "Vendas brutas", getVendasBrutas(),
+                "Porcentagem comissao", getPorcentagemComissao());
     }
 
     // teste abaixo

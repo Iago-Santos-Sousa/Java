@@ -3,8 +3,8 @@ package Polimorfismo;
 public class EmpregadoComissionadoPlus extends EmpregadoComissionado {
     private double salarioBase;
 
-    public EmpregadoComissionadoPlus(double salario, double vendasBrutas, double porcentagemComissao, String PrimeiroNome,
-                                 String UltimoNome, String cpf) {
+    public EmpregadoComissionadoPlus(double salario, double vendasBrutas, double
+            porcentagemComissao, String PrimeiroNome, String UltimoNome, String cpf) {
         super(vendasBrutas, porcentagemComissao, PrimeiroNome, UltimoNome, cpf);
         setSalarioBase(salario);
     }
